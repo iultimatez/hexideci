@@ -21,11 +21,12 @@ rl.on('line', function (cmd) {
   		}
   	}
   };
-  console.log("toConvert: " + toConvert + " toAdd: " + toAdd);
+  //console.log("toConvert: " + toConvert + " toAdd: " + toAdd);
   var deci = parseInt(toConvert, 16);
   console.log("\n------------------------------------");
   console.log("Input number in deci: " + deci);
   deci += parseInt(toAdd);
+  console.log("Add: " + toAdd);
   console.log("Result: " + deci.toString(16));
   console.log("------------------------------------\n");
 });
